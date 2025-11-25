@@ -8,8 +8,8 @@ const containerVariants: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.3,
+      staggerChildren: 0.1,
+      delayChildren: 0.2,
     },
   },
 };
@@ -19,7 +19,7 @@ const itemVariants: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.5, ease: "easeOut" },
   },
 };
 
@@ -51,14 +51,14 @@ export default function NotFound() {
         >
           <Link
             href="/"
-            className="flex items-center justify-center gap-2 bg-foreground text-background px-6 py-4 rounded-sm font-medium hover:bg-foreground/90 transition-colors group"
+            className="flex items-center justify-center gap-2 transition-all bg-foreground text-background px-6 py-4 font-medium hover:bg-foreground/90 group"
           >
             <span>Return Home</span>
           </Link>
 
           <Link
             href="/renovations"
-            className="flex items-center justify-center gap-2 border-2 border-foreground/30 px-6 py-4 rounded-sm font-medium hover:border-foreground/60 transition-colors group"
+            className="flex items-center justify-center gap-2 border-2 border-foreground/30 px-6 py-4 font-medium hover:border-foreground/60 transition-all group"
           >
             <span>View Renovations</span>
           </Link>

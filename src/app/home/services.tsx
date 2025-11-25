@@ -73,7 +73,7 @@ export function Services() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="flex flex-col gap-2 lg:gap-4"
+          className="flex flex-col pt-10"
         >
           {items.map((item, idx) => (
             <Fragment key={item.marker}>

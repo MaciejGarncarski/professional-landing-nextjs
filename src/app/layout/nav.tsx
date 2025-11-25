@@ -48,7 +48,7 @@ export function NavMobile() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="py-6 px-6 border-b z-40 border-border/40 gap-12 items-center flex lg:hidden sticky top-0 bg-background">
+    <nav className="py-6 px-6 border-b z-40 border-border/40 gap-12 items-center flex lg:hidden sticky top-0 bg-background/90 backdrop-blur-2xl">
       <h1 className="font-serif text-xl tracking-tighter font-medium z-20">
         <Link href="/" onClick={closeMenu}>
           Hearth & Home.
