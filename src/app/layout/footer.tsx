@@ -45,12 +45,12 @@ const columns: Column[] = [
 
 export function Footer() {
   return (
-    <footer className="bg-black p-10 md:px-12 md:pt-20 md:pb-10 text-white flex flex-col gap-8 md:gap-10">
-      <div className="flex flex-col md:grid grid-cols-12 min-h-50">
-        <h2 className="font-medium uppercase text-2xl col-span-3 mb-10 md:mb-0">
-          Company
+    <footer className="bg-black p-10 lg:px-12 lg:pt-20 lg:pb-10 text-white flex flex-col gap-8 lg:gap-10">
+      <div className="flex flex-col lg:grid grid-cols-12 min-h-50">
+        <h2 className="font-serif font-medium uppercase text-2xl col-span-3 mb-10 lg:mb-0">
+          Hearth & Home.
         </h2>
-        <div className="flex flex-col md:flex-row gap-8 md:gap-32 col-span-8">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-32 col-span-8">
           {columns.map((column) => (
             <FooterColumn
               key={column.title}
@@ -61,10 +61,10 @@ export function Footer() {
         </div>
       </div>
       <div className="h-px bg-muted-foreground w-full"></div>
-      <div className="flex flex-col md:items-center text-xs justify-between text-gray-500 gap-4 md:gap-0 md:flex-row">
-        <p>© 2026 Company. All rights reserved.</p>
+      <div className="flex flex-col lg:items-center text-xs justify-between text-gray-500 gap-4 lg:gap-0 lg:flex-row">
+        <p>© 2026 Hearth & Home. All rights reserved.</p>
 
-        <div className="flex items-center justify-between md:justify-start gap-8">
+        <div className="flex items-center justify-between lg:justify-start gap-8">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
         </div>

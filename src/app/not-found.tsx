@@ -25,7 +25,7 @@ const itemVariants: Variants = {
 
 export default function NotFound() {
   return (
-    <main className="flex-1 flex items-center justify-center px-6 py-20 md:py-32">
+    <main className="flex-1 flex items-center justify-center px-6 py-20 lg:py-32">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -33,13 +33,13 @@ export default function NotFound() {
         className="w-full max-w-2xl text-center"
       >
         <motion.div variants={itemVariants} className="mb-8">
-          <div className="text-8xl md:text-9xl font-serif font-bold text-foreground/30 mb-4">
+          <div className="text-8xl lg:text-9xl font-serif font-bold text-foreground/30 mb-4">
             404
           </div>
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">
+          <h1 className="text-4xl lg:text-5xl font-serif font-bold mb-4">
             Page Not Found
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+          <p className="text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
             We couldn't find the page you're looking for. It might have moved,
             or perhaps the address was entered incorrectly.
           </p>
@@ -47,7 +47,7 @@ export default function NotFound() {
 
         <motion.div
           variants={itemVariants}
-          className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8"
         >
           <Link
             href="/"

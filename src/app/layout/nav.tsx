@@ -7,11 +7,11 @@ import { useLockBodyScroll } from "@/app/use-lock-scroll";
 
 export function NavDesktop() {
   return (
-    <nav className="py-6 px-12 border-b border-border gap-12 items-center hidden md:flex">
+    <nav className="py-6 px-12 border-b border-border/40 gap-24 items-center hidden lg:flex sticky top-0 z-40 bg-background/90 backdrop-blur-3xl">
       <h1 className="font-serif text-2xl tracking-tighter font-medium">
         <Link href="/">Hearth & Home.</Link>
       </h1>
-      <ul className="flex gap-20 text-sm uppercase font-medium text-muted-foreground tracking-wider">
+      <ul className="flex gap-24 text-sm uppercase font-medium text-muted-foreground tracking-wider">
         {links.map(({ text, url }) => {
           return (
             <li key={url} className="hover:text-foreground transition-colors">
@@ -25,12 +25,15 @@ export function NavDesktop() {
         <a href="tel:(555) 123-4567" className="font-medium">
           (555) 123-4567
         </a>
-        <button
+        <motion.button
           type="button"
+          whileTap={{
+            scale: 0.95,
+          }}
           className="bg-black text-white font-serif px-4 py-2 cursor-pointer"
         >
           Book Consultation
-        </button>
+        </motion.button>
       </div>
     </nav>
   );
@@ -45,7 +48,7 @@ export function NavMobile() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="py-6 px-6 border-b border-border gap-12 items-center flex md:hidden sticky top-0 bg-background">
+    <nav className="py-6 px-6 border-b z-40 border-border/40 gap-12 items-center flex lg:hidden sticky top-0 bg-background">
       <h1 className="font-serif text-xl tracking-tighter font-medium z-20">
         <Link href="/" onClick={closeMenu}>
           Hearth & Home.
