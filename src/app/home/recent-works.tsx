@@ -54,7 +54,7 @@ const MotionImage = motion(Image);
 
 export function RecentWorks() {
   return (
-    <section className="py-20 lg:mx-auto lg:max-w-380 px-6 lg:px-10 flex flex-col gap-10">
+    <section className="py-20 lg:mx-auto px-6 lg:px-20 flex flex-col gap-10">
       <div className="flex flex-col lg:flex-row justify-between border-b border-border/40 pb-10 gap-5 lg:items-end">
         <h2 className="text-5xl font-serif">
           <BlurIn>Recent Works</BlurIn>
@@ -78,9 +78,9 @@ export function RecentWorks() {
             <motion.li
               variants={itemVariants}
               key={item.title}
-              className="flex flex-col gap-5"
+              className="flex flex-col gap-5 border-b border-transparent hover:border-border pb-4 transition-[border-color]"
             >
-              <div className="overflow-hidden">
+              <div className="overflow-hidden cursor-pointer">
                 <MotionImage
                   src={item.image}
                   alt={item.title}
