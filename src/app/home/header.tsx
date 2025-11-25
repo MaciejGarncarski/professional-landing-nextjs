@@ -4,7 +4,7 @@ import heroImg from "@/assets/hero/hero.png";
 export function Header() {
   return (
     <header className="mx-auto py-10 md:py-20 flex flex-col px-6 gap-12">
-      <h2 className="font-serif text-balance text-center mx-auto text-5xl md:text-7xl">
+      <h2 className="font-serif text-balance text-center mx-auto text-5xl md:text-7xl md:max-w-240">
         Quality construction meets{" "}
         <span className="italic">local craftsmanship.</span>
       </h2>
@@ -16,6 +16,7 @@ export function Header() {
 
       <Image
         src={heroImg}
+        placeholder="blur"
         quality={100}
         alt="Hero image"
         className="mx-auto mt-8 h-120 object-cover w-280"

@@ -1,11 +1,15 @@
-import { Header } from "@/app/header";
 import type { Metadata } from "next";
+import { Header } from "@/app/home/header";
+import { OurPromise } from "@/app/home/our-promise";
+import { Services } from "@/app/home/services";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <Header />
-    </div>
+      <OurPromise />
+      <Services />
+    </main>
   );
 }
 

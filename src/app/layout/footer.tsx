@@ -65,8 +65,8 @@ export function Footer() {
         <p>© 2026 Company. All rights reserved.</p>
 
         <div className="flex items-center justify-between md:justify-start gap-8">
-          <a href="">Privacy Policy</a>
-          <a href="">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
         </div>
       </div>
     </footer>

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, Variants } from "motion/react";
+import { motion, type Variants } from "motion/react";
 import Link from "next/link";
 
 const containerVariants: Variants = {

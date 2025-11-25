@@ -1,10 +1,9 @@
 "use client";
 
+import { AnimatePresence, motion, type Variants } from "motion/react";
 import Link from "next/link";
-import { AnimatePresence, motion, Variants } from "motion/react";
 import { useState } from "react";
 import { useLockBodyScroll } from "@/app/use-lock-scroll";
-import { exit } from "process";
 
 export function NavDesktop() {
   return (
